@@ -1,0 +1,49 @@
+{
+    "name": "test-runner-lite",
+    "version": "1.0.0",
+    "description": "Ultra-small, dependency-free test runner for Node.js modules",
+  "keywords": [
+    "test",
+    "runner",
+    "lite",
+    "testrunner",
+    "test-runner",
+    "unit-test",
+    "nodejs",
+    "minimal",
+    "nano"
+  ],
+    "homepage": "https://github.com/manuel-lohmus/test-runner-lite#readme",
+    "bugs": {
+        "url": "https://github.com/manuel-lohmus/test-runner-lite/issues"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/manuel-lohmus/test-runner-lite.git"
+    },
+    "license": "MIT",
+    "author": "Manuel Lõhmus",
+    "type": "commonjs",
+    "exports": {
+        ".": {
+            "browser": "./browser.js",
+            "import": "./wrapper.mjs",
+            "require": "./index.js"
+        },
+        "./package.json": "./package.json"
+    },
+    "main": "index.js",
+    "browser": "browser.js",
+    "files": [
+        "logo/",
+        "browser.js",
+        "index.js",
+        "LICENSE",
+        "package.json",
+        "README.md",
+        "wrapper.mjs"
+    ],
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    }
+}

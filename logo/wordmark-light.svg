@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="640" height="160" viewBox="0 0 640 160" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">test-runner-lite logo (light)</title>
+  <desc id="desc">Monospaced wordmark with terminal mark and green check. Black text on white, accent green.</desc>
+
+  <defs>
+    <style>
+      .text { font-family: "IBM Plex Mono","JetBrains Mono","Fira Code",ui-monospace,SFMono-Regular,Menlo,Consolas,"Liberation Mono",monospace; font-weight: 600; }
+    </style>
+  </defs>
+
+  <!-- Background (transparent/white-safe) -->
+  <rect x="0" y="0" width="640" height="160" fill="#FFFFFF"/>
+
+  <!-- Logomark: terminal glyph + check -->
+  <g transform="translate(24,24)">
+    <!-- terminal frame -->
+    <rect x="0" y="0" rx="10" ry="10" width="112" height="112" fill="none" stroke="#111111" stroke-width="6"/>
+    <!-- prompt >_ -->
+    <text x="16" y="70" class="text" font-size="48" fill="#111111">&gt;_</text>
+    <!-- check -->
+    <path d="M84 78 l-12 12 -8 -8" fill="none" stroke="#00C853" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"/>
+  </g>
+
+  <!-- Wordmark -->
+  <g transform="translate(160,104)">
+    <text class="text" font-size="44" fill="#111111">test-runner-</text>
+    <text class="text" font-size="44" fill="#00C853" x="360" y="0">lite</text>
+  </g>
+</svg>

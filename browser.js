@@ -1,0 +1,1 @@
+throw new Error("`test-runner-lite` does not work in the browser.");
