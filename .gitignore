@@ -361,3 +361,7 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+*.tgz
+/To-Do.txt
+/index.test.js
+/cluster-test.js
