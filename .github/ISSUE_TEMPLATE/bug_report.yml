@@ -1,0 +1,71 @@
+name: Bug report
+description: Report a reproducible issue or unexpected behavior
+labels: [bug]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 🐞 Bug report
+
+        Please describe the issue clearly and provide steps to reproduce it.
+
+  - type: input
+    id: title
+    attributes:
+      label: Short title
+      description: A concise summary of the bug
+      placeholder: "Test fails when using --workers flag"
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+      description: Describe the bug and what you expected to happen
+      placeholder: "When running with --workers, the test suite hangs indefinitely..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Provide a minimal reproducible example
+      placeholder: |
+        1. Run `node index.test.js --workers`
+        2. Observe that no output is printed
+        3. Process does not exit
+    validations:
+      required: false
+
+  - type: input
+    id: version
+    attributes:
+      label: test-runner-lite version
+      placeholder: "e.g. 1.0.0"
+    validations:
+      required: false
+
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform
+      options:
+        - Linux
+        - macOS
+        - Windows
+        - Other
+    validations:
+      required: false
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant logs or output
+      description: Paste any error messages or console output
+      render: shell
+    validations:
+      required: false

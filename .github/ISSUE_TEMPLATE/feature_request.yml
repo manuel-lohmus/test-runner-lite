@@ -1,0 +1,50 @@
+name: Feature request
+description: Suggest a new capability or improvement
+labels: [enhancement]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## ✨ Feature request
+
+        Describe the feature you'd like to see added to **test-runner-lite**.
+
+  - type: input
+    id: title
+    attributes:
+      label: Short title
+      description: A concise summary of the feature
+      placeholder: "Add support for test groups"
+    validations:
+      required: true
+
+  - type: textarea
+    id: motivation
+    attributes:
+      label: Why is this needed?
+      description: Explain the problem this feature would solve
+      placeholder: "I want to organize tests into logical groups for better reporting..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      description: Describe how the feature could work
+      placeholder: |
+        Maybe add a `group` option to the test definition:
+        test("...", { group: "auth" }, ...)
+    validations:
+      required: false
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Mention any workarounds or other ideas
+      placeholder: "Currently I prefix test names manually, but it's not ideal..."
+    validations:
+      required: false

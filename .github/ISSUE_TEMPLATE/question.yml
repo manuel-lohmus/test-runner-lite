@@ -1,0 +1,43 @@
+name: Question
+description: Ask a question about usage, behavior, or design
+labels: [question]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## ❓ Question
+
+        Ask anything about how **test-runner-lite** works or how to use it.
+
+  - type: input
+    id: title
+    attributes:
+      label: Short question
+      description: A concise summary of your question
+      placeholder: "How do I run only worker tests?"
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: Provide background or what you've tried so far
+      placeholder: |
+        I'm using `--workers` and want to skip primary tests.
+        I tried using `skip: !isWorker`, but I'm not sure how to filter them from CLI.
+    validations:
+      required: false
+
+  - type: dropdown
+    id: urgency
+    attributes:
+      label: Urgency
+      options:
+        - Just curious
+        - Blocking my work
+        - Would love an answer soon
+    validations:
+      required: false

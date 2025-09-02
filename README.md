@@ -45,6 +45,8 @@ Minimal API, CLI‑friendly, and ideal for embedding in any module’s test suit
 
 ## 📦 Installation
 
+[Available on npm](https://www.npmjs.com/package/test-runner-lite)
+
 From npm public registry:
 
 ```bash

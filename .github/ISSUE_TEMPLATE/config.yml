@@ -1,0 +1,10 @@
+blank_issues_enabled: false
+
+contact_links:
+  - name: 📚 Documentation
+    url: https://github.com/manuel-lohmus/test-runner-lite#readme
+    about: Read the full usage guide and CLI options
+
+  # - name: 💬 Discussions
+  #   url: https://github.com/manuel-lohmus/test-runner-lite/discussions
+  #   about: Ask questions, share ideas, or get help from the community
